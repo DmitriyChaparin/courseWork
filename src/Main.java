@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Сумма зарплат за месяц: "+allSalariesPerMonth());
         System.out.println("Сотрудник с минимальной зарплатой: "+minSalary());
         System.out.println("Сотрудник с максимальной "+maxSalary());
-        System.out.println("Средняя зарплата " +averidgSalary());
+        System.out.println("Средняя зарплата " +averageSalary());
         printFullNameAllEmployees();
     }
 
@@ -74,7 +74,7 @@ public class Main {
         return result;
     }
 
-    public static double averidgSalary() {
+    public static double averageSalary() {
         int counter = 0;
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null) {
